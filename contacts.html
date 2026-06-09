@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportGear | Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><i class="fas fa-dumbbell"></i> SportGear</div>
+                <nav class="nav-links">
+                    <a href="index.html">Каталог</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html" class="active">Контакты</a>
+                </nav>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i> Корзина (<span id="cartCount">0</span>)
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3><i class="fas fa-shopping-bag"></i> Моя корзина</h3>
+                <span class="cart-close" id="cartClose">&times;</span>
+            </div>
+            <div class="cart-modal-body" id="cartItemsList">
+                <div class="empty-cart">Корзина пуста</div>
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotalPrice">0 ₽</span>
+                </div>
+                <button class="btn-primary" id="checkoutBtn" style="width:100%">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="contacts-page">
+        <div class="container">
+            <div class="contacts-card">
+                <div class="contacts-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h1>Свяжитесь с нами</h1>
+                <p>Оставьте сообщение, мы ответим в течение 24 часов! Ваше мнение важно для нас.</p>
+                <form id="feedbackForm" class="contacts-form">
+                    <div class="form-row">
+                        <input type="text" id="fbName" placeholder="Ваше имя" required>
+                        <input type="email" id="fbEmail" placeholder="Email для ответа" required>
+                    </div>
+                    <textarea id="fbMessage" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Отправить сообщение</button>
+                    <div id="feedbackMessage" class="feedback-message"></div>
+                </form>
+                <div class="contacts-info">
+                    <div class="contact-item"><i class="fas fa-phone"></i> +7 (999) 123-45-67</div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i> info@sportgear.ru</div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Спортивная, 15</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 SportGear — твой путь к спортивным вершинам. <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
